@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJ Comunicação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, p, a, button, input, textarea { font-family: 'Montserrat', sans-serif; } 
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        header {
+            background: #0a1a44;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+        .nav-links a {
+            color: #dde2e2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        #hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #0a1a44;
+            color: #ffffff;
+        }
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #dde2e2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #0a1a44;
+            color: #dde2e2;
+            font-weight: 700;
+            border: 2px solid #dde2e2;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(10, 26, 68, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background: #dde2e2;
+            color: #0a1a44;
+            box-shadow: 0 6px 14px rgba(221, 226, 226, 0.7);
+            transform: translateY(-3px);
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #dde2e2;
+        }
+        section p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+        #servicos, #cases, #contato {
+            background: #0a1a44;
+            padding: 3rem;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            margin: 2rem auto;
+            max-width: 80%;
+        }
+        #servicos ul, #cases ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        #servicos li, #cases li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 1rem);
+            max-width: calc(33.333% - 1rem);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+        }
+        #contato form {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #dde2e2;
+            border-radius: 5px;
+            background: #dde2e2;
+            color: #000000;
+        }
+        button {
+            padding: 0.75rem 1.5rem;
+            background: #dde2e2;
+            color: #0a1a44;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            background: #ffffff;
+            color: #0a1a44;
+        }
+        footer {
+            text-align: center;
+            background: #0a1a44;
+            color: #dde2e2;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TJ Comunicação</div>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    
+    <section id="hero">
+        <h1>Conectando Marcas Ao Sucesso</h1>
+        <p>Soluções estratégicas para fortalecer a sua comunicação.</p>
+        <a href="#contato" class="btn">Fale Conosco</a>
+    </section>
+    
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Conheça as soluções que oferecemos para fortalecer sua marca.</p>
+        <ul>
+            <li>Gestão de Redes Sociais</li>
+            <li>Marketing Político e Institucional</li>
+            <li>Criação de Campanhas Publicitárias</li>
+            <li>Assessoria de Imprensa</li>
+            <li>Design e Identidade Visual</li>
+            <li>Produção de Conteúdo</li>
+        </ul>
+    </section>
+    
+    <section id="cases">
+        <h2>Cases de Sucesso</h2>
+        <p>Algumas marcas e parceiros que confiaram em nosso trabalho:</p>
+        <ul>
+            <li>Partido Progressistas</li>
+            <li>Fundação Francisco Dornelles</li>
+            <li>Império da Maquiagens</li>
+            <li>Deputado Hélio Lopes</li>
+            <li>Deputado Coronel Chrisóstomo</li>
+            <li>Deputado Thiago Flores</li>
+        </ul>
+    </section>
+    
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 TJ Comunicação - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+    
